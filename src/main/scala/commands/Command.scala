@@ -2,8 +2,6 @@ package commands
 
 import filesystem.State
 
-//
-
 trait Command extends (State => State)
 
 object Command {

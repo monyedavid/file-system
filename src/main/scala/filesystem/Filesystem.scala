@@ -20,7 +20,7 @@ object Filesystem extends App {
    List(1,2,3,4).foldLeft(0)((x, y) => x + y)
     */
   io.Source.stdin.getLines().foldLeft(State(root, root))((currentState, newLine) => {
-    currentState.show
+    currentState.show()
     Command.from(newLine).apply(currentState)
   })
 }

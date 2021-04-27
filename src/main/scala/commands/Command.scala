@@ -2,6 +2,10 @@ package commands
 
 import filesystem.State
 
+/**
+ * takes one state[of the shell] & converts it to another state
+ */
+
 trait Command extends (State => State)
 
 object Command {
